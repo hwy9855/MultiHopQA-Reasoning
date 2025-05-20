@@ -1,5 +1,12 @@
 # MultiHopQA-Reasoning
 
+<div align="center">
+
+[![arXiv](https://img.shields.io/badge/arXiv-2505.11754-b31b1b.svg)](https://arxiv.org/abs/2505.11754)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+</div>  
+
 This is the official repository for the accepted ACL 2025 main paper "Masking in Multi-hop QA: An Analysis of How Language Models Perform with Context Permutation". This repository contains code for evaluating and analyzing language models' performance on multi-hop question answering tasks under different context ordering settings.
 
 ## Installation
@@ -17,8 +24,7 @@ conda activate multihopqa
 pip install -r requirements.txt
 ```
 
-3. Download the data:
-Download the MusiQue following the instructions from the [official repository](https://github.com/StonyBrookNLP/musique). Put the `musique_ans_v1.0_dev.jsonl` and `musique_ans_v1.0_train.jsonl` files in the `data/` directory. You can also use other datasets following the same format.
+3. Download the MuSiQue dataset following the instructions from the [official repository](https://github.com/StonyBrookNLP/musique). Put the `musique_ans_v1.0_dev.jsonl` and `musique_ans_v1.0_train.jsonl` files in the `data/` directory. You can also use other datasets following the same format.
 
 ## Experiments
 
@@ -137,13 +143,13 @@ python best_order_eval.py \
 If you use this code in your research, please cite our paper:
 
 ```bibtex
-@inproceedings{huang-etal-2025-masking,
-  title={Masking in Multi-hop QA: An Analysis of How Language Models Perform with Context Permutation},
-  author={Huang, Wenyu  and
-      Vougiouklis, Pavlos  and
-      Lapata, Mirella  and
-      Pan, Jeff Z.},
-  booktitle={Proceedings of ACL 2025},
-  year={2025}
+@misc{huang2025maskingmultihopqaanalysis,
+      title={Masking in Multi-hop QA: An Analysis of How Language Models Perform with Context Permutation}, 
+      author={Wenyu Huang and Pavlos Vougiouklis and Mirella Lapata and Jeff Z. Pan},
+      year={2025},
+      eprint={2505.11754},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.11754}, 
 }
 ```
